@@ -77,8 +77,9 @@
     text-decoration: none;
 }
 
-.text-footer li{
-    list-style-type: none; /* Elimina los puntos de la lista */
+.text-footer li {
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
     padding-left: 0;
 }
 
@@ -109,7 +110,7 @@
     font-size: 12px;
     font-weight: 500;
     color: rgb(209, 209, 209);
-    
+
     text-decoration: none;
 }
 
@@ -221,4 +222,40 @@
 .no-gutters .row {
     margin-right: 0;
     margin-left: 0;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-250%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.slide-content h1 {
+    font-size: 50px;
 }

@@ -18,3 +18,7 @@ class Index(generic.ListView):
 class Details(generic.DetailView):
     model = Product
     template_name = 'store/product_details.html'
+
+
+def welcome_page(request):
+    return render(request, 'store/welcome.html')
